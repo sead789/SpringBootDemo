@@ -1,0 +1,491 @@
+2019-07-08 10:59:17.364  INFO 8100 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 8100 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 10:59:17.372  INFO 8100 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 10:59:20.003  WARN 8100 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2019-07-08 10:59:20.066  INFO 8100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 10:59:20.070  INFO 8100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 10:59:20.101  INFO 8100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-07-08 10:59:20.629  INFO 8100 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ae56cff3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 10:59:21.027  INFO 8100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 10:59:21.063  INFO 8100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 10:59:21.063  INFO 8100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 10:59:21.236  INFO 8100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 10:59:21.237  INFO 8100 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3742 ms
+2019-07-08 10:59:21.322  WARN 8100 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldController': Unsatisfied dependency expressed through field 'helloWorldService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldServiceImpl': Unsatisfied dependency expressed through field 'helloWorldMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.mapper.HelloWorldMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-07-08 10:59:21.327  INFO 8100 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-07-08 10:59:21.360  INFO 8100 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-08 10:59:21.552 ERROR 8100 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field helloWorldMapper in com.example.demo.service.impl.HelloWorldServiceImpl required a bean of type 'com.example.demo.mapper.HelloWorldMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.mapper.HelloWorldMapper' in your configuration.
+
+2019-07-08 11:01:32.679  INFO 3952 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 3952 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:01:32.687  INFO 3952 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:01:34.479  WARN 3952 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2019-07-08 11:01:34.543  INFO 3952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:01:34.546  INFO 3952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:01:34.576  INFO 3952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-08 11:01:35.047  INFO 3952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10544d8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:01:35.459  INFO 3952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:01:35.500  INFO 3952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:01:35.500  INFO 3952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:01:35.684  INFO 3952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:01:35.685  INFO 3952 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2528 ms
+2019-07-08 11:01:35.792  WARN 3952 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldController': Unsatisfied dependency expressed through field 'helloWorldService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldServiceImpl': Unsatisfied dependency expressed through field 'helloWorldMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.mapper.HelloWorldMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-07-08 11:01:35.796  INFO 3952 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-07-08 11:01:35.818  INFO 3952 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-08 11:01:35.976 ERROR 3952 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field helloWorldMapper in com.example.demo.service.impl.HelloWorldServiceImpl required a bean of type 'com.example.demo.mapper.HelloWorldMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.mapper.HelloWorldMapper' in your configuration.
+
+2019-07-08 11:02:15.039  INFO 4112 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 4112 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:02:15.046  INFO 4112 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:02:16.828  WARN 4112 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2019-07-08 11:02:16.891  INFO 4112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:02:16.895  INFO 4112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:02:16.924  INFO 4112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-07-08 11:02:17.469  INFO 4112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db87b03f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:02:17.881  INFO 4112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:02:17.914  INFO 4112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:02:17.914  INFO 4112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:02:18.086  INFO 4112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:02:18.087  INFO 4112 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2928 ms
+2019-07-08 11:02:18.171  WARN 4112 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldController': Unsatisfied dependency expressed through field 'helloWorldService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldServiceImpl': Unsatisfied dependency expressed through field 'helloWorldMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.mapper.HelloWorldMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-07-08 11:02:18.175  INFO 4112 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-07-08 11:02:18.200  INFO 4112 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-08 11:02:18.373 ERROR 4112 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field helloWorldMapper in com.example.demo.service.impl.HelloWorldServiceImpl required a bean of type 'com.example.demo.mapper.HelloWorldMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.mapper.HelloWorldMapper' in your configuration.
+
+2019-07-08 11:03:43.843  INFO 6980 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 6980 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:03:43.850  INFO 6980 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:03:45.925  WARN 6980 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2019-07-08 11:03:45.987  INFO 6980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:03:45.990  INFO 6980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:03:46.023  INFO 6980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-07-08 11:03:46.491  INFO 6980 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7ddd8cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:03:46.914  INFO 6980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:03:46.953  INFO 6980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:03:46.954  INFO 6980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:03:47.154  INFO 6980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:03:47.155  INFO 6980 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3123 ms
+2019-07-08 11:03:47.235  WARN 6980 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldController': Unsatisfied dependency expressed through field 'helloWorldService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldServiceImpl': Unsatisfied dependency expressed through field 'helloWorldMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.mapper.HelloWorldMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-07-08 11:03:47.239  INFO 6980 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-07-08 11:03:47.263  INFO 6980 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-08 11:03:47.444 ERROR 6980 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field helloWorldMapper in com.example.demo.service.impl.HelloWorldServiceImpl required a bean of type 'com.example.demo.mapper.HelloWorldMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.mapper.HelloWorldMapper' in your configuration.
+
+2019-07-08 11:05:58.989  INFO 5864 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 5864 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:05:58.995  INFO 5864 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:06:01.444  WARN 5864 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2019-07-08 11:06:01.510  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:06:01.514  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:06:01.543  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-08 11:06:02.109  INFO 5864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e152606d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:06:02.517  INFO 5864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:06:02.553  INFO 5864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:06:02.554  INFO 5864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:06:02.753  INFO 5864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:06:02.754  INFO 5864 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3668 ms
+2019-07-08 11:06:02.838  WARN 5864 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldController': Unsatisfied dependency expressed through field 'helloWorldService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldServiceImpl': Unsatisfied dependency expressed through field 'helloWorldMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.mapper.HelloWorldMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-07-08 11:06:02.843  INFO 5864 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-07-08 11:06:02.883  INFO 5864 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-08 11:06:03.096 ERROR 5864 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field helloWorldMapper in com.example.demo.service.impl.HelloWorldServiceImpl required a bean of type 'com.example.demo.mapper.HelloWorldMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.mapper.HelloWorldMapper' in your configuration.
+
+2019-07-08 11:08:55.613  INFO 4040 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 4040 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:08:55.619  INFO 4040 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:08:57.409  WARN 4040 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2019-07-08 11:08:57.471  INFO 4040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:08:57.475  INFO 4040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:08:57.506  INFO 4040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-07-08 11:08:57.992  INFO 4040 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$99ab4eac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:08:58.398  INFO 4040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:08:58.434  INFO 4040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:08:58.435  INFO 4040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:08:58.613  INFO 4040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:08:58.614  INFO 4040 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2893 ms
+2019-07-08 11:08:58.696  WARN 4040 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldController': Unsatisfied dependency expressed through field 'helloWorldService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldServiceImpl': Unsatisfied dependency expressed through field 'helloWorldMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.mapper.HelloWorldMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-07-08 11:08:58.700  INFO 4040 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-07-08 11:08:58.728  INFO 4040 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-08 11:08:58.894 ERROR 4040 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field helloWorldMapper in com.example.demo.service.impl.HelloWorldServiceImpl required a bean of type 'com.example.demo.mapper.HelloWorldMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.mapper.HelloWorldMapper' in your configuration.
+
+2019-07-08 11:12:00.559  INFO 4144 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 4144 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:12:00.566  INFO 4144 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:12:02.684  INFO 4144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:12:02.687  INFO 4144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:12:02.728  INFO 4144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2019-07-08 11:12:03.338  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dc435e3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:12:03.763  INFO 4144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:12:03.797  INFO 4144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:12:03.798  INFO 4144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:12:03.998  INFO 4144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:12:03.998  INFO 4144 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3257 ms
+2019-07-08 11:12:05.063  INFO 4144 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:12:06.011  INFO 4144 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:12:06.035  INFO 4144 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:12:06.087  INFO 4144 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:12:06.168 ERROR 4144 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:16) [classes/:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_40]
+	at sun.nio.ch.Net.bind(Net.java:437) ~[na:1.8.0_40]
+	at sun.nio.ch.Net.bind(Net.java:429) ~[na:1.8.0_40]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_40]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_40]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	... 14 common frames omitted
+
+2019-07-08 11:12:06.182  INFO 4144 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-07-08 11:12:06.197  INFO 4144 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-08 11:12:06.203 ERROR 4144 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-07-08 11:12:20.837  INFO 7632 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 7632 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:12:20.842  INFO 7632 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:12:22.622  INFO 7632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:12:22.626  INFO 7632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:12:22.667  INFO 7632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-07-08 11:12:23.160  INFO 7632 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d0e1f1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:12:23.564  INFO 7632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:12:23.601  INFO 7632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:12:23.601  INFO 7632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:12:23.790  INFO 7632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:12:23.790  INFO 7632 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2837 ms
+2019-07-08 11:12:24.828  INFO 7632 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:12:25.812  INFO 7632 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:12:25.837  INFO 7632 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:12:25.886  INFO 7632 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:12:25.984  INFO 7632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-08 11:12:25.992  INFO 7632 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 6.405 seconds (JVM running for 8.539)
+2019-07-08 11:15:03.420  INFO 3832 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 3832 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:15:03.428  INFO 3832 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:15:05.492  INFO 3832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:15:05.496  INFO 3832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:15:05.538  INFO 3832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-07-08 11:15:06.018  INFO 3832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a343b8eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:15:06.447  INFO 3832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:15:06.513  INFO 3832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:15:06.513  INFO 3832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:15:06.874  INFO 3832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:15:06.874  INFO 3832 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3222 ms
+2019-07-08 11:15:07.959  INFO 3832 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:15:09.266  INFO 3832 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:15:09.293  INFO 3832 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:15:09.360  INFO 3832 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:15:09.438  INFO 3832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-08 11:15:09.446  INFO 3832 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 7.302 seconds (JVM running for 8.965)
+2019-07-08 11:16:08.642  INFO 3832 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-08 11:16:08.642  INFO 3832 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-08 11:16:08.658  INFO 3832 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-07-08 11:16:08.736  INFO 3832 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-08 11:16:08.929  INFO 3832 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-08 11:16:09.140 ERROR 3832 --- [http-nio-8080-exec-2] o.a.t.util.descriptor.web.LoginConfig    : 捕获到Exception异常：org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'demo.test' doesn't exist
+### The error may exist in file [E:\IdeaProjects\demo\target\classes\mapping\HelloWorldMapper.xml]
+### The error may involve com.example.demo.mapper.HelloWorldMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into test (id, code, msg)         values (?, ?, ?)
+### Cause: java.sql.SQLSyntaxErrorException: Table 'demo.test' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'demo.test' doesn't exist
+2019-07-08 11:17:13.370  INFO 5032 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 5032 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:17:13.376  INFO 5032 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:17:15.425  INFO 5032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:17:15.429  INFO 5032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:17:15.477  INFO 5032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-07-08 11:17:16.011  INFO 5032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2db93106] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:17:16.406  INFO 5032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:17:16.443  INFO 5032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:17:16.444  INFO 5032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:17:16.626  INFO 5032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:17:16.627  INFO 5032 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3095 ms
+2019-07-08 11:17:18.019  INFO 5032 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:17:18.951  INFO 5032 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:17:18.975  INFO 5032 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:17:19.027  INFO 5032 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:17:19.093  INFO 5032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-08 11:17:19.097  INFO 5032 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 7.115 seconds (JVM running for 9.091)
+2019-07-08 11:17:49.301  INFO 5032 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-08 11:17:49.302  INFO 5032 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-08 11:17:49.324  INFO 5032 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2019-07-08 11:17:49.405  INFO 5032 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-08 11:17:49.588  INFO 5032 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-08 11:20:16.075  INFO 8500 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 8500 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:20:16.082  INFO 8500 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:20:18.474  INFO 8500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:20:18.478  INFO 8500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:20:18.524  INFO 8500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2019-07-08 11:20:19.036  INFO 8500 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$55e3aa8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:20:19.431  INFO 8500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:20:19.467  INFO 8500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:20:19.468  INFO 8500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:20:19.666  INFO 8500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:20:19.667  INFO 8500 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3433 ms
+2019-07-08 11:20:20.790  INFO 8500 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:20:21.763  INFO 8500 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:20:21.791  INFO 8500 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:20:21.840  INFO 8500 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:20:21.907  INFO 8500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-08 11:20:21.912  INFO 8500 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 7.286 seconds (JVM running for 9.066)
+2019-07-08 11:29:53.363  INFO 8424 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 8424 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:29:53.370  INFO 8424 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:29:55.672  INFO 8424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:29:55.677  INFO 8424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:29:55.718  INFO 8424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-07-08 11:29:56.266  INFO 8424 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$17f9fb69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:29:56.689  INFO 8424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:29:56.725  INFO 8424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:29:56.726  INFO 8424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:29:56.924  INFO 8424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:29:56.925  INFO 8424 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3341 ms
+2019-07-08 11:29:58.086  INFO 8424 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:29:59.081  INFO 8424 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:29:59.111  INFO 8424 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:29:59.162  INFO 8424 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:29:59.233  INFO 8424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-08 11:29:59.238  INFO 8424 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 7.26 seconds (JVM running for 10.31)
+2019-07-08 11:30:17.943  INFO 8424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-08 11:30:17.945  INFO 8424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-08 11:30:17.962  INFO 8424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-07-08 11:30:18.011 ERROR 8424 --- [http-nio-8080-exec-1] o.a.t.util.descriptor.web.LoginConfig    : 捕获到Exception异常：org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+2019-07-08 11:30:18.280  WARN 8424 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2019-07-08 11:37:38.382  INFO 1900 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 1900 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:37:38.389  INFO 1900 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:37:40.668  INFO 1900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:37:40.671  INFO 1900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:37:40.710  INFO 1900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-07-08 11:37:41.267  INFO 1900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8585e1ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:37:41.683  INFO 1900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:37:41.739  INFO 1900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:37:41.740  INFO 1900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:37:41.964  INFO 1900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:37:41.964  INFO 1900 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3429 ms
+2019-07-08 11:37:43.136  INFO 1900 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:37:44.117  INFO 1900 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:37:44.142  INFO 1900 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:37:44.192  INFO 1900 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:37:44.263  INFO 1900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-08 11:37:44.269  INFO 1900 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 7.288 seconds (JVM running for 8.926)
+2019-07-08 11:37:49.618  INFO 1900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-08 11:37:49.618  INFO 1900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-08 11:37:49.641  INFO 1900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-07-08 11:37:49.901 ERROR 1900 --- [http-nio-8080-exec-1] o.a.t.util.descriptor.web.LoginConfig    : 必填校验异常:长度不能小于6(msg)
+2019-07-08 11:37:59.885 ERROR 1900 --- [http-nio-8080-exec-3] o.a.t.util.descriptor.web.LoginConfig    : 必填校验异常:code不能为空(code)
+2019-07-08 11:38:07.746  INFO 1900 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-08 11:38:07.957  INFO 1900 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-08 11:38:08.118 ERROR 1900 --- [http-nio-8080-exec-4] o.a.t.util.descriptor.web.LoginConfig    : 捕获到Exception异常：org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: No setter found for the keyProperty 'id' in com.example.demo.vo.req.HelloWorldRequest.
+2019-07-08 11:39:30.473  INFO 9008 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 9008 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:39:30.479  INFO 9008 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:39:32.318  INFO 9008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:39:32.323  INFO 9008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:39:32.367  INFO 9008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-07-08 11:39:32.852  INFO 9008 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$13abc9aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:39:33.263  INFO 9008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:39:33.301  INFO 9008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:39:33.301  INFO 9008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:39:33.494  INFO 9008 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:39:33.494  INFO 9008 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2918 ms
+2019-07-08 11:39:34.558  INFO 9008 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:39:35.545  INFO 9008 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:39:35.571  INFO 9008 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:39:35.624  INFO 9008 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:39:35.695  INFO 9008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-08 11:39:35.700  INFO 9008 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 6.512 seconds (JVM running for 8.755)
+2019-07-08 11:39:41.254  INFO 9008 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-08 11:39:41.255  INFO 9008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-08 11:39:41.268  INFO 9008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-07-08 11:39:41.446  INFO 9008 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-08 11:39:41.647  INFO 9008 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-08 11:39:41.748 ERROR 9008 --- [http-nio-8080-exec-2] o.a.t.util.descriptor.web.LoginConfig    : 捕获到Exception异常：java.lang.NullPointerException
+2019-07-08 11:40:07.623  INFO 8056 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 8056 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:40:07.630  INFO 8056 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:40:09.510  INFO 8056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:40:09.513  INFO 8056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:40:09.555  INFO 8056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-07-08 11:40:10.056  INFO 8056 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc47cd4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:40:10.475  INFO 8056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:40:10.512  INFO 8056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:40:10.513  INFO 8056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:40:10.719  INFO 8056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:40:10.720  INFO 8056 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2966 ms
+2019-07-08 11:40:11.857  INFO 8056 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:40:12.814  INFO 8056 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:40:12.840  INFO 8056 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:40:12.890  INFO 8056 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:40:12.957  INFO 8056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-08 11:40:12.963  INFO 8056 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 6.664 seconds (JVM running for 8.249)
+2019-07-08 11:40:17.007  INFO 8056 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-08 11:40:17.007  INFO 8056 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-08 11:40:17.021  INFO 8056 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-07-08 11:40:17.198  INFO 8056 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-08 11:40:17.383  INFO 8056 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-08 11:40:59.164  INFO 6332 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 6332 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:40:59.169  INFO 6332 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:41:01.136  INFO 6332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:41:01.139  INFO 6332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:41:01.181  INFO 6332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-07-08 11:41:01.689  INFO 6332 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f1b7a47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:41:02.104  INFO 6332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:41:02.144  INFO 6332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:41:02.145  INFO 6332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:41:02.365  INFO 6332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:41:02.365  INFO 6332 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3069 ms
+2019-07-08 11:41:03.491  INFO 6332 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:41:04.442  INFO 6332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:41:04.466  INFO 6332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:41:04.515  INFO 6332 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:41:04.585  INFO 6332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-08 11:41:04.590  INFO 6332 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 6.863 seconds (JVM running for 8.483)
+2019-07-08 11:41:16.397  INFO 6332 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-08 11:41:16.398  INFO 6332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-08 11:41:16.415  INFO 6332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-07-08 11:41:16.461  WARN 6332 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /hello-world/pp
+2019-07-08 11:58:55.306  INFO 6552 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on QCGH5SPSAIYGI4O with PID 6552 (E:\IdeaProjects\demo\target\classes started by Administrator in E:\IdeaProjects\demo)
+2019-07-08 11:58:55.313  INFO 6552 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-07-08 11:58:57.139  INFO 6552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-08 11:58:57.142  INFO 6552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-08 11:58:57.190  INFO 6552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-07-08 11:58:57.763  INFO 6552 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f48e74a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-08 11:58:58.293  INFO 6552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-08 11:58:58.339  INFO 6552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-08 11:58:58.340  INFO 6552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-08 11:58:58.567  INFO 6552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-08 11:58:58.568  INFO 6552 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3153 ms
+2019-07-08 11:58:59.987  INFO 6552 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-08 11:59:00.685  INFO 6552 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-08 11:59:00.710  INFO 6552 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-08 11:59:00.758  INFO 6552 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-08 11:59:00.847  INFO 6552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-08 11:59:00.853  INFO 6552 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 6.911 seconds (JVM running for 8.496)
